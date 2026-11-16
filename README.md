@@ -60,7 +60,7 @@ Dataset yang digunakan dalam praktikum ini adalah:
 
 ### 4.1 Atribut Dataset
 
-Berikut merupakan atribut yang terdapat dalam dataset:
+Atribut yang terdapat dalam dataset:
 
 | No. | Nama Atribut | Keterangan |
 |---|---|---|
@@ -85,9 +85,8 @@ Pada program `train.py`, terdapat tiga kolom yang tidak digunakan sebagai atribu
 - `lama_studi_tahun`
 - `semester_tercatat`
 
-Kolom `lulus_tepat_waktu_4tahun` digunakan sebagai target klasifikasi, sedangkan dua kolom lainnya dikeluarkan dari data input.
-
-Dengan demikian, terdapat 9 atribut input yang digunakan untuk proses pelatihan model.
+Kolom `lulus_tepat_waktu_4tahun` adalah target klasifikasi, sedangkan dua kolom lainnya dikeluarkan dari data input.
+9 atribut input yang digunakan untuk proses pelatihan model.
 
 ## 5. Pemeriksaan Validitas Data
 
@@ -107,13 +106,11 @@ Hasil pemeriksaan:
 
 ### Kesimpulan Validitas Data
 
-Berdasarkan pemeriksaan dataset, diperoleh hasil bahwa tidak terdapat nilai kosong (Missing Value) dan tidak ditemukan data duplikat.
+Berdasarkan pemeriksaan dari dataset, diperoleh hasil bahwa tidak ada nilai kosong (Missing Value) dan tidak ada data duplikat sehingga dataset memenuhi pemeriksaan dasar kelengkapan data dan dapat digunakan untuk proses klasifikasi.
 
-Seluruh atribut memiliki tipe data numerik, sehingga dapat diproses oleh program yang menggunakan NumPy dan Pandas.
+Semua atribut memiliki tipe data numerik, kemudian diproses oleh program yang menggunakan NumPy dan Pandas.
 
-Dengan demikian, dataset memenuhi pemeriksaan dasar kelengkapan data dan dapat digunakan untuk proses klasifikasi.
-
-Namun, pemeriksaan ini belum membuktikan kebenaran seluruh nilai data secara faktual karena tidak tersedia dokumentasi sumber asli untuk melakukan verifikasi lebih lanjut.
+Pemeriksaan ini belum membuktikan kebenaran seluruh nilai data secara faktual karena tidak adanya dokumentasi sumber asli untuk melakukan verifikasi yang lebih lanjut.
 
 ## 6. Klasifikasi Class
 
@@ -199,7 +196,7 @@ Implementasi program terdiri dari tiga file Python.
 
 ### 9.1 DecisionTree.py
 
-File ini berisi implementasi algoritma Decision Tree.
+File yang berisi implementasi algoritma Decision Tree.
 
 Beberapa proses yang terdapat di dalamnya:
 
@@ -212,7 +209,7 @@ Beberapa proses yang terdapat di dalamnya:
 
 ### 9.2 RandomForest.py
 
-File ini berisi implementasi algoritma Random Forest.
+File implementasi algoritma Random Forest.
 
 Proses yang dilakukan:
 
@@ -224,7 +221,7 @@ Proses yang dilakukan:
 
 ### 9.3 train.py
 
-File ini merupakan program utama untuk menjalankan proses Machine Learning.
+File yang merupakan program utama untuk menjalankan proses Machine Learning.
 
 Proses yang dilakukan:
 
@@ -311,59 +308,6 @@ Algoritma Random Forest menggunakan 10 Decision Tree dengan metode Bootstrap Sam
 Evaluasi model dilakukan menggunakan Accuracy, Precision, Recall, F1-Score, dan Confusion Matrix.
 
 Dengan demikian, praktikum ini menunjukkan penerapan proses klasifikasi Machine Learning mulai dari pembacaan dataset, pemeriksaan data, pembagian data, pelatihan model, hingga evaluasi hasil prediksi.
-
-## 13. Struktur Folder Program
-
-Struktur file praktikum yang digunakan adalah:
-
-```text
-tugas Aiiii/
-│
-├── dataset_ml_kelulusan.csv
-│
-├── DecisionTree.py
-│
-├── RandomForest.py
-│
-└── train.py
-```
-
-## 14. Cara Menjalankan Program
-
-### Persyaratan
-
-Program menggunakan Python dengan beberapa library berikut:
-
-- NumPy
-- Pandas
-- Scikit-Learn
-- Matplotlib
-
-### Instalasi Library
-
-Jalankan perintah berikut pada terminal:
-
-```bash
-pip install numpy pandas scikit-learn matplotlib
-```
-
-### Menjalankan Program
-
-Pastikan seluruh file berada dalam satu folder, kemudian jalankan:
-
-```bash
-python train.py
-```
-
-Program akan menampilkan:
-
-1. Informasi jumlah dataset yang berhasil dibaca.
-2. Nilai Accuracy.
-3. Classification Report.
-4. Confusion Matrix.
-5. Grafik distribusi kelulusan mahasiswa.
-
----
 
 **Laporan Praktikum Machine Learning**
 
