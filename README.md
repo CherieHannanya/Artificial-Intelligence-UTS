@@ -308,7 +308,3 @@ Algoritma Random Forest menggunakan 10 Decision Tree dengan metode Bootstrap Sam
 Evaluasi model dilakukan menggunakan Accuracy, Precision, Recall, F1-Score, dan Confusion Matrix.
 
 Dengan demikian, praktikum ini menunjukkan penerapan proses klasifikasi Machine Learning mulai dari pembacaan dataset, pemeriksaan data, pembagian data, pelatihan model, hingga evaluasi hasil prediksi.
-
-**Laporan Praktikum Machine Learning**
-
-**Topik:** Klasifikasi Prediksi Kelulusan Mahasiswa Tepat Waktu Menggunakan Algoritma Random Forest.
